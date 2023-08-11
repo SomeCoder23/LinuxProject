@@ -1,0 +1,10 @@
+[Unit]
+Description=Logging kernal logs to txt file then compressing it then uploading it to Dropbox
+
+[Service]
+User=sarahz23
+ExecStart=/home/sarahz23/LinuxProject/kerLogs.sh
+
+[Install]
+WantedBy=multi-user.target
+
