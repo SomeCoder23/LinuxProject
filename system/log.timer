@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer to execute script at the start if every hour
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+Unit=kerLogger.service
+
+[Install]
+WantedBy=timers.target
+
