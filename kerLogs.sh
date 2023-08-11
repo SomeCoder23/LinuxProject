@@ -19,7 +19,7 @@ tar -cjf "$compressedFile" "$logFile"
 
 echo "Compressed $compressedFile"
 
-echo "Uploading to dropbox folder...AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+echo "Uploading to dropbox folder..."
 dbxcli put -v "$compressedFile" "/LinuxProject/$compressedFile"  
 
 echo "Deleting files..."
